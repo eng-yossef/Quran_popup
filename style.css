@@ -1,0 +1,17 @@
+#quranLooperBox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    padding: 20px;
+    background: rgb(237, 224, 118);
+    color: white;
+    font-size: 22px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #000;
+    direction: rtl;
+    text-align: center;
+    z-index: 999999;
+    font-family: "Amiri", serif;
+    line-height: 1.6;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quran Looper</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 280px; /* Slightly wider for better spacing */
+            padding: 20px;
+            background-color: #1a1a1a; /* Dark background */
+            color: #f0f0f0; /* Light text */
+            margin: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+        }
+
+        /* Headings */
+        h3 {
+            text-align: center;
+            color: #4CAF50; /* A pleasant green accent color */
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        /* Labels */
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #ccc;
+        }
+
+        /* Form Elements: select, input, button */
+        select, input[type="number"], button {
+            width: 100%;
+            padding: 10px 15px; /* More padding */
+            box-sizing: border-box;
+            border: 1px solid #333;
+            border-radius: 6px;
+            background-color: #2a2a2a; /* Slightly lighter dark background for contrast */
+            color: #f0f0f0;
+            font-size: 1em;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        /* Focus state for inputs/select */
+        select:focus, input[type="number"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+
+        /* Button Styling */
+        #toggleBtn {
+            margin-top: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #4CAF50; /* Green primary action color */
+            border: none;
+            color: white;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        #toggleBtn:hover {
+            background-color: #66bb6a; /* Lighter green on hover */
+            box-shadow: 0 2px 8px rgba(76, 175, 80, 0.4);
+        }
+
+        #toggleBtn:active {
+            background-color: #388e3c; /* Darker green on click */
+        }
+
+        /* Specific styling for Ayah inputs to align them nicely */
+        #startAyah, #endAyah {
+            /* You can add specific alignment or sizing if needed, but 100% width is fine for this layout */
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Quran Ayah Looper</h3>
+
+    <label for="surahSelect">Surah</label>
+    <select id="surahSelect"></select>
+
+    <label for="startAyah">Start Ayah</label>
+    <input type="number" id="startAyah" min="1" value="1">
+
+    <label for="endAyah">End Ayah</label>
+    <input type="number" id="endAyah" min="1" value="1">
+
+    <button id="toggleBtn">Enable</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
