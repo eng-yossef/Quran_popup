@@ -24,14 +24,6 @@ A lightweight Chrome extension that displays Quran Ayat on any webpage in a floa
 
 ---
 
-## 📂 Files
-manifest.json
-popup.html
-popup.js # UI + user settings
-background.js # Loop engine + API fetch
-content.js # Ayah overlay renderer
-
----
 
 ## 🔧 Installation
 1. Go to `chrome://extensions/`  
